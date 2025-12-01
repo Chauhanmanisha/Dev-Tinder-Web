@@ -23,11 +23,8 @@ const Body = () => {
             
         }catch(err){
             if(err.status === 400){
-                console.log("insideError");
                 navigate("/login");
             }
-            
-            console.error(err);
         }
     };
 
